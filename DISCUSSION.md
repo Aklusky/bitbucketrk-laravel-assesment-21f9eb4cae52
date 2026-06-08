@@ -9,4 +9,10 @@ Section 1 Documentation:
 
     These changes help establish the foundation for a more production ready development workflow improving onboarding, enforcing code quality standards, and offering automated validation via CI.
 
+Section 2 Documentation:
+    1. Configured the application to use MySQL and switched the utilized destination data from hardcoded arrays to the database.
+    2. Fixed migration issues and updated the Destination model with fillable attributes and casts.
+    3. Updated DestinationExplorer to load from Eloquent
+    4. Added search, sort, pagination, and an endpoint for individual destinations. 
+
 
