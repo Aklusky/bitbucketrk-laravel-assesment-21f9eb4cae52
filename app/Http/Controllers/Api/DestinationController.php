@@ -13,7 +13,7 @@ class DestinationController extends Controller
     public function index(Request $request): JsonResponse
     {
         // Uncomment this to use the database
-        //$data = Destination::all();
+        // $data = Destination::all();
         // $data = $this->getHardcodedDestinations();
 
         // Improved query/ filtering ability
@@ -45,11 +45,13 @@ class DestinationController extends Controller
         $sort = $validated['sort'] ?? 'name';
         $direction = $validated['direction'] ?? 'asc';
         $perPage = $validated['per_page'] ?? 15;
+
         return response()->json(
             $query->orderBy($sort, $direction)->paginate($perPage)
         );
         // return response()->json(['data' => $data]);
     }
+
     public function show(Destination $destination): JsonResponse
     {
         return response()->json([

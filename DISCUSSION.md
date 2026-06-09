@@ -15,4 +15,11 @@ Section 2 Documentation:
     3. Updated DestinationExplorer to load from Eloquent
     4. Added search, sort, pagination, and an endpoint for individual destinations. 
 
+Section 3 Documentation:
+    1. Fix search- now works with regardless of case and for country,region, cost and activity
+    2. Changed usort function in DestinationExplorer to use spaceship operator to better handle equalities
+    3. Add :void for non-return functions in DestinationExplorer
+    4. Revamped the blade to display the header/ search and destinations on cards rather than a table and stylized to look more polished
+    5. Added a sort by option to UI
+
 
