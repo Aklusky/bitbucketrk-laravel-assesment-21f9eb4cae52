@@ -32,10 +32,12 @@
 
 ## With More Time
 
-- Add a configuration flag to switch between database destinations and fallback hardcoded data. The API currently returns an Eloquent paginated query, so hardcoded array data would need a different response path.
+- Add a config flag to swap between database data and hardcoded data. The API currently returns an Eloquent paginated query, so the hardcoded array data would need a different response path. This would also eliminate the need for commenting out the code for the unused hardcoded data functions in order to prevent that code from being seen as dead code by Larastan.
 - Add destination photos to the UI.
-- Add a dark/light mode toggle.
-- Build a full authentication system with admin roles for creating, editing, and deleting destinations, while standard users would have read-only access.
-- Add a per page dropdown so users can control how many destinations are shown at once.
+- Add toggle for light/dark mode.
+- Enhance the CI pipline with additional validation/tests
+- Build a full authentication system with admin roles that can create, edit, and delete destinations, and read only access for standard users.
+- Add a dropdown selector to change the number of destinations shown per page.
 - Make each destination card clickable and route to an individual destination detail page/API endpoint with more information.
+
 
